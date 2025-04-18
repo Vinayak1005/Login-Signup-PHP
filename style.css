@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #333;
+    padding: 20px;
+}
+
+
+.container,
+.form-box,
+.admin-box,
+.user-box {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+h2,
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+span {
+    color: #fd5400;
+}
+
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #fd5400;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #e14800;
+}
+
+
+p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+p a,
+a {
+    color: #fd5400;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.error-message {
+    background: #f8d7da;
+    color: #a42834;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+
+.form-box {
+    display: none;
+}
+
+.form-box.active {
+    display: block;
+}
